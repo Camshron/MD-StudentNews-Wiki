@@ -2,8 +2,14 @@
 
 body {
     font-family: 'Benton Sans', sans-serif;
+    line-height: 1.6;
+    background-color:#f94949;
+    color:#333;
+    margin: 0;
+    padding: 0 20px;
 }
 
-h1 {
-    color: #990000;
+header {
+    background-color: #990000;
+    color:white;
 }
