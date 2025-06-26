@@ -3,7 +3,7 @@
 body {
     font-family: 'Benton Sans', sans-serif;
     line-height: 1.6;
-    background-color:#f94949;
+    background-color: #FFFFFF;
     color:#333;
     margin: 0;
     padding: 0 20px;
@@ -11,5 +11,5 @@ body {
 
 header {
     background-color: #990000;
-    color:white;
+    color:#FFFFFF;
 }
