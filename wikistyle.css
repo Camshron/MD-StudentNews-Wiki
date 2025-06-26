@@ -24,7 +24,11 @@ footer {
             width: 100%;
             font-size: 0.9em;
         }
-
+.footer-content{
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: center;
+}
 footer a {
             color: #ffd700;
             text-decoration: none;
