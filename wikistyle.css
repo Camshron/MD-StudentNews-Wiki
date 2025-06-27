@@ -15,27 +15,45 @@ h1 {
     color:#990000;
 }
 
-footer {
-            background-color: #FFFFFF;
-            color: #0000EE;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            font-size: 0.9em;
-        }
-.footer-content{
-            max-width: 500px;
-            margin: 0 auto;
-            text-align: center;
-            padding: 50px;
-}
-footer a {
-            color: #ffd700;
-            text-decoration: none;
-            margin: 0 10px;
-        }
+footer-button {
+    /* Background and text color from your footer */
+    background-color: #FFFFFF;
+    color: #0000EE;
 
-footer a:hover {
-            text-decoration: underline;
+    /* Text alignment (buttons are usually centered by default, but good to be explicit) */
+    text-align: center;
+
+    /* Padding similar to your footer */
+    padding: 20px; /* Adjust as needed for a button's typical size */
+
+    /* Font size */
+    font-size: 0.9em;
+
+    /* Display as inline-block so we can set width/padding and it respects text flow */
+    display: inline-block;
+
+    /* Optional: Width (if you want it to behave like a block-level footer) */
+    /* width: 100%; Uncomment if you want a full-width button */
+
+    /* Remove default button border and background (for cleaner styling) */
+    border: none;
+    cursor: pointer; /* Indicates it's clickable */
+    text-decoration: none; /* In case it's an <a> tag */
+
+    /* Add a subtle shadow or border to make it look more like a button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px; /* Slightly rounded corners */
+
+    /* Optional: Hover effect */
+    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition */
+}
+
+.footer-button:hover {
+    background-color: #e0e0e0; /* Slightly darker on hover */
+    /* text-decoration: underline;  Uncomment if you want underline on hover for link-buttons */
+    transform: translateY(-1px); /* Slight lift effect */
+}
+
+.footer-button:active {
+    background-color: #d0d0d0; /* Even darker when clicked */
+    transform: translateY(0); /* "Press" effect */
