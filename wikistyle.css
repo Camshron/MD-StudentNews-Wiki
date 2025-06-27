@@ -15,45 +15,55 @@ h1 {
     color:#990000;
 }
 
-footer-button {
-    /* Background and text color from your footer */
-    background-color: #990000;
-    color: #0000EE;
-
-    /* Text alignment (buttons are usually centered by default, but good to be explicit) */
+.footer-button {
+    /* --- Core Button Styling (Colors & Basic Layout) --- */
+    background-color: #007BFF; /* A vibrant blue for the button background */
+    color: #FFFFFF;             /* White text color for contrast */
     text-align: center;
+    padding: 15px 30px;         /* Vertical padding 15px, Horizontal padding 30px */
+    font-size: 1.1em;           /* Slightly larger font for prominence */
+    font-weight: bold;          /* Make the text bold */
+    text-decoration: none;      /* Removes the default underline from <a> tags */
+    display: inline-block;      /* Allows padding, width, and other block properties on an inline element */
 
-    /* Padding similar to your footer */
-    padding: 20px; /* Adjust as needed for a button's typical size */
+    /* --- Visual Enhancements --- */
+    border: none;               /* Remove default border */
+    border-radius: 8px;         /* Slightly more rounded corners for a modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* A more pronounced shadow for depth */
+    cursor: pointer;            /* Indicates it's clickable */
 
-    /* Font size */
-    font-size: 0.9em;
-
-    /* Display as inline-block so we can set width/padding and it respects text flow */
-    display: inline-block;
-
-    /* Optional: Width (if you want it to behave like a block-level footer) */
-    /* width: 100%; Uncomment if you want a full-width button */
-
-    /* Remove default button border and background (for cleaner styling) */
-    border: none;
-    cursor: pointer; /* Indicates it's clickable */
-    text-decoration: none; /* In case it's an <a> tag */
-
-    /* Add a subtle shadow or border to make it look more like a button */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 5px; /* Slightly rounded corners */
-
-    /* Optional: Hover effect */
-    transition: background-color 0.3s ease, transform 0.1s ease; /* Smooth transition */
+    /* --- Transition for Smooth Effects --- */
+    transition: background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.3s ease; /* Smooth transitions for hover/active states */
 }
 
+/* --- Hover State --- */
 .footer-button:hover {
-    background-color: #e0e0e0; /* Slightly darker on hover */
-    /* text-decoration: underline;  Uncomment if you want underline on hover for link-buttons */
-    transform: translateY(-1px); /* Slight lift effect */
+    background-color: #0056b3; /* A darker shade of blue on hover */
+    transform: translateY(-2px); /* Lifts the button slightly */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Increases shadow on hover */
 }
 
+/* --- Active (Click/Press) State --- */
 .footer-button:active {
-    background-color: #d0d0d0; /* Even darker when clicked */
-    transform: translateY(0); /* "Press" effect */
+    background-color: #004085; /* Even darker blue when pressed */
+    transform: translateY(0);  /* Moves the button down, simulating a press */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Reduces shadow to show "pressed" state */
+}
+
+/* --- Optional: Accessibility Focus State --- */
+.footer-button:focus {
+    outline: 2px solid #0056b3; /* Outline for keyboard navigation */
+    outline-offset: 2px;       /* Space between outline and button */
+}
+
+/* Optional: If you want a full-width button (like your original footer) */
+/*
+.footer-button.full-width {
+    display: block;
+    width: 100%;
+    margin-top: 10px; // Example: Add some space if it's full-width
+    margin-bottom: 10px; // Example
+}
+*/
